@@ -55,6 +55,17 @@ app.get("/bad", (req, res) => {
     errorMessage: "unable to fulfill request"
   });
 });
+
+app.get("/projects", (req, res) => {
+  res.render("projects.hbs", {
+    projectHeader: "My page for projects",
+    description:
+      "this will eventually be a page where you can view my different creations"
+  });
+});
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+//projects
+//add link in header file to projects
