@@ -63,6 +63,10 @@ app.get("/projects", (req, res) => {
       "this will eventually be a page where you can view my different creations"
   });
 });
+
+app.get("/practice", (req, res) => {
+  res.render("practice.hbs");
+});
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
